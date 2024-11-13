@@ -8,9 +8,9 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>LOGIN - LAZY GATEWAY</title>
+    <title>LOGIN - WHATSAPP ZOFTWARE</title>
 
-    <meta name="description" content="LAZY GATEWAY" />
+    <meta name="description" content="WHATSAPP ZOFTWARE<" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{!! asset('assets') !!}/img/favicon.png" />
@@ -67,20 +67,20 @@
                             </a>
                         </div>
                         <!-- /Logo -->
-                        <h4 class="mb-1 pt-2">Welcome to WHATSAPP ZOFTWARE! 👋</h4>
-                        <p class="mb-4">Please sign-in to your account!</p>
+                        <h4 class="mb-1 pt-2">Bienvenido a WHATSAPP ZOFTWARE! 👋</h4>
+                        <p class="mb-4">Por favor inicia sesión en tu cuenta!</p>
 
                         <form class="mb-3" action="{!! route('login') !!}" method="POST">
                             @csrf
                             <div class="mb-3">
-                                <label for="email" class="form-label">Username</label>
+                                <label for="email" class="form-label">Usuario</label>
                                 <input type="text" class="form-control"
                                     value="{{ config('app.isdemo') ? 'admin' : '' }}" name="username"
                                     placeholder="Enter your username" autofocus required />
                             </div>
                             <div class="mb-3 form-password-toggle">
                                 <div class="d-flex justify-content-between">
-                                    <label class="form-label" for="password">Password</label>
+                                    <label class="form-label" for="password">Contraseña</label>
                                 </div>
                                 <div class="input-group input-group-merge">
                                     <input type="password" class="form-control"
@@ -93,11 +93,11 @@
                             <div class="mb-3">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" name="remember" />
-                                    <label class="form-check-label" for="remember-me"> Remember Me </label>
+                                    <label class="form-check-label" for="remember-me"> Recuerdame </label>
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <button class="btn btn-primary d-grid w-100" type="submit">Sign in</button>
+                                <button class="btn btn-primary d-grid w-100" type="submit">Ingresar</button>
                             </div>
                         </form>
 
